@@ -9,6 +9,8 @@ import com.jme3.texture.Texture;
 public class Monkeycraft extends SimpleApplication {
     @Override
     public void simpleInitApp() {
+        flyCam.setMoveSpeed(4f);
+
         Box box = new Box(1, 1, 1);
         Geometry geometry = new Geometry("Box", box);
         Material material = new Material(assetManager, "Common/MatDefs/Misc/Unshaded.j3md");
